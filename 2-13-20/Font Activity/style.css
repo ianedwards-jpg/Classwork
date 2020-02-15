@@ -1,0 +1,25 @@
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+.paragraph1     {
+font-weight: bold;
+font-family: 'Roboto Slab', serif;
+
+}
+
+.paragraph2     {
+font-size: 24px;
+
+}
+
+.paragraph3     {
+line-height: 50px;
+
+}
+
+a.link1 :hover {
+background-color: aqua;
+} 
