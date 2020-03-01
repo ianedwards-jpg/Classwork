@@ -2,6 +2,7 @@ var todoInput = document.querySelector("#todo-text");
 var todoForm = document.querySelector("#todo-form");
 var todoList = document.querySelector("#todo-list");
 var todoCountSpan = document.querySelector("#todo-count");
+var completebtn = document.querySelector("#todo-complete")
 
 var todos = ["Learn HTML", "Learn CSS", "Learn JavaScript"];
 
@@ -20,14 +21,25 @@ function renderTodos() {
     li.textContent = todo;
     todoList.appendChild(li);
 
-    //Add Event Listener for todo Variable 
-    todoForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    var todotext = todoInput.value.trim (); 
-
-    if (todotext === '') ;
-    return;
-    }
+    var completebtn = document.createElement("#todo-complete")
   }
 }
+
+// When form is submitted...
+todoForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  var todoText = todoInput.value.trim();
+
+  // Return from function early if submitted todoText is blank
+  if (todoText === "") {
+    return;
+  }
+
+  // Add new todoText to todos array, clear the input
+  todos.push(todoText);
+  todoInput.value = "";
+
+  // Re-render the list
+  renderTodos();
+});
