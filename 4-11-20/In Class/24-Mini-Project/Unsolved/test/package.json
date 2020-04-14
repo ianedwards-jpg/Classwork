@@ -1,0 +1,11 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "main": "Letter.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
