@@ -11,8 +11,9 @@ id INTEGER(11) AUTO_INCREMENT NOT NULL,
   -- Create a string column called "language" --
 language VARCHAR(30) NOT NULL,
   -- Create an integer column called "rating" --
-rating integer(5)
+rating integer(5),
   -- Create a boolean column called "mastered" which will automatically fill --
+mastered boolean
   -- with true when a new row is made and the value isn't otherwise defined. --
 
   -- Set the id as this table's primary key
