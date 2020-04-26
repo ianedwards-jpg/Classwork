@@ -29,6 +29,6 @@ CREATE TABLE topAlbums (
   PRIMARY KEY (position)
 );
 
-SELECT * FROM top5000 t1;
 
+SELECT * 
 
