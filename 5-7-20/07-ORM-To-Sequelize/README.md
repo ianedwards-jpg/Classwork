@@ -2,15 +2,17 @@
 
 * INSTRUCTIONS:
 
-  1) Create a new local MYSQL database called 'todolist', but don't create any tables.
+  1) Create a new local MYSQL database called 'todolist', but don't create any tables. DONE
 
-  2) Delete any references to the orm.js file inside the `api-routes.js` file.
+  2) Delete any references to the orm.js file inside the `api-routes.js` file. DONE
 
-  3) Delete the config folder.
+  3) Delete the config folder.  DONE
 
-  4) While inside the activity folder, run npm install in terminal.
+  4) While inside the activity folder, run npm install in terminal. DONE
 
-  5) In terminal, type in the following command: "sequelize init:models & sequelize init:config". If this produces an error, then you may not have the sequelize and the sequelize-cli installed globally. Fix this by running `npm install -g sequelize sequelize-cli` in your terminal and trying again.
+  5) In terminal, type in the following command: "sequelize init:models & sequelize init:config". If this produces an error, then you may not have the sequelize and the sequelize-cli installed globally. Fix this by running `npm install -g sequelize sequelize-cli` in your terminal and trying again. DONE
+
+    ***Open Git Bash in project directory and run these commands seperatly (remove "&" and run two commands seperatly)
 
   6) Step 5 should have created a config and a models folder for us. Navigate to the config folder, open `config.json`, and modify the development object's "database","username" and "password" values to match your MYSQL database on your machine. Include the database port number, if not using the default.
 
