@@ -38,8 +38,14 @@ module.exports = function(app) {
   // DELETE route for deleting todos. We can get the id of the todo to be deleted from
   // req.params.id
   app.delete("/api/todos/:id", function(req, res) {
-    // Use the sequelize destroy method to delete a record from our table with the
-    // id in req.params.id. res.json the result back to the user
+    db.Todo.destroy({
+      where: {
+      id: req.params.id
+      }
+    }).then(function(dbTodo) {
+      // We have access to the new todo as an argument inside of the callback function
+      res.json(dbTodo);
+// Now this entry was removed from the database
 
   });
 
