@@ -4,11 +4,11 @@
 
   1) Open the folder slacked out to you.
 
-  2) Run `npm install`.
+  2) Run `npm install`. DONE
 
-  3) Update the `config.json` file's development object with your own local MYSQL database settings.
+  3) Update the `config.json` file's development object with your own local MYSQL database settings.  DONE
 
-  4) Modify the `todo.js` file so that the Todo model has a flag to prevent the text field from being null. Also add a validation to make sure the text field is at least one character, but no more than 140 characters.
+  4) Modify the `todo.js` file so that the Todo model has a flag to prevent the text field from being null. Also add a validation to make sure the text field is at least one character, but no more than 140 characters. DONE
 
   5) Modify the complete field in our Todo model so that it supplies a default value of false if one is not supplied during Todo creation.
 
